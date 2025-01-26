@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     alignItems: "center",
     paddingBottom: "30px",
     paddingTop: "100px",
-    backgroundColor: tokens.colorNeutralBackground3,
+    backgroundColor: "green",
   },
   message: {
     fontSize: tokens.fontSizeHero900,

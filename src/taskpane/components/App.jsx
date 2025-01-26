@@ -70,7 +70,7 @@ const App = (props) => {
 
   return (
     <div>
-      <Header logo="assets/logo-filled.png" title={title} message="Welcome" />
+      <Header logo="assets/logo.svg" title={title} message="PALABRESAK2" className="couleur-text" />
 
       {/* Affiche notre pane de traduction */}
       <TranslationPane />
