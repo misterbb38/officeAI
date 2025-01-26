@@ -25,7 +25,8 @@ function TranslationPane() {
    *  - /api/translate/gemini
    */
   async function callBackend(apiType, text) {
-    const endpointUrl = `http://localhost:3001/api/translate/${apiType}`;
+    const endpointUrl = `https://officeaiserver.onrender.com/api/translate/${apiType}`;
+    //const endpointUrl = `http://localhost:3001/api/translate/${apiType}`;
     const response = await fetch(endpointUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
