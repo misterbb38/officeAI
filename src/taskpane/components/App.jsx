@@ -48,7 +48,6 @@
 
 // export default App;
 
-
 // src/taskpane/components/App.jsx
 
 import * as React from "react";
@@ -72,8 +71,6 @@ const App = (props) => {
   return (
     <div>
       <Header logo="assets/logo-filled.png" title={title} message="Welcome" />
-      <HeroList message="Discover what this add-in can do for you today!" items={listItems} />
-      <TextInsertion />
 
       {/* Affiche notre pane de traduction */}
       <TranslationPane />

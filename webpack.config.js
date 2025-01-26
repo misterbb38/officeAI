@@ -27,7 +27,7 @@ module.exports = async (env, options) => {
       clean: true,
     },
     resolve: {
-      extensions: [".js", ".jsx", ".html"],
+      extensions: [".js", ".jsx", ".html", "css"],
     },
     module: {
       rules: [
@@ -49,6 +49,13 @@ module.exports = async (env, options) => {
           generator: {
             filename: "assets/[name][ext][query]",
           },
+        },
+        {
+          test: /\.css$/i,
+         use: [
+           "style-loader",
+          "css-loader"
+       ]
         },
       ],
     },

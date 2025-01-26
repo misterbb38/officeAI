@@ -1,0 +1,119 @@
+/* Conteneur principal du composant */
+.translation-pane {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 600px;             /* Largeur max sur écrans + larges */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  }
+  
+  /* Titre */
+  .translation-pane h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;           /* Centré pour un look plus moderne */
+    color: #333;
+  }
+  
+  /* Zones de formulaire */
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Sélecteur de langues */
+  .form-select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    background-color: #fff;
+  }
+  
+  /* Zone de texte pour instructions */
+  .form-textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    min-height: 60px;
+    resize: vertical;  /* Autorise le redimensionnement vertical */
+    background-color: #fff;
+  }
+  
+  /* Conteneur des boutons */
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;       /* Les boutons passent à la ligne si l'espace est insuffisant */
+    gap: 0.5rem;           /* Espace entre les boutons */
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style de base pour tous les boutons */
+  .button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #0d6efd;    /* Bleu par défaut */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Variantes de couleur */
+  .button.green {
+    background-color: #198754;    /* Vert */
+  }
+  
+  .button.purple {
+    background-color: #6f42c1;    /* Violet */
+  }
+  
+  /* Effet hover commun */
+  .button:hover {
+    opacity: 0.85;
+  }
+  
+  /* Message de statut */
+  .status {
+    font-weight: 500;
+    color: #0d6efd;
+    min-height: 1.5rem;
+    text-align: center;           /* Centré */
+    margin-top: 0.5rem;
+  }
+  
+  /* Media query pour affiner le design sur écrans plus larges */
+  @media (min-width: 768px) {
+    /* Exemple : on peut placer .form-row en row si on veut,
+       mais ici c'est déjà assez simple.
+     */
+    .translation-pane {
+      padding: 2rem;
+    }
+    .form-row {
+      flex-direction: row;
+      align-items: center;
+    }
+    .form-row .form-label {
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
+    .form-row .form-textarea {
+      flex: 1;
+    }
+  }
+  
