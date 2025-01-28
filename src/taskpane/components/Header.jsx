@@ -7,14 +7,16 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    paddingBottom: "30px",
-    paddingTop: "100px",
+    // Ajustez la hauteur souhaitée via le padding
+    paddingBottom: "10px",
+    paddingTop: "20px", // réduit de 70px à 20px
     backgroundColor: "green",
   },
   message: {
     fontSize: tokens.fontSizeHero900,
     fontWeight: tokens.fontWeightRegular,
-    fontColor: tokens.colorNeutralBackgroundStatic,
+    // Pour que le texte soit en blanc
+    color: "white",
   },
 });
 
@@ -24,7 +26,7 @@ const Header = (props) => {
 
   return (
     <section className={styles.welcome__header}>
-      <Image width="90" height="90" src={logo} alt={title} />
+      <Image width="70" height="70" src={logo} alt={title} />
       <h1 className={styles.message}>{message}</h1>
     </section>
   );
