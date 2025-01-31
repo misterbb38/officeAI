@@ -8,8 +8,8 @@ const useStyles = makeStyles({
     flexDirection: "column",
     alignItems: "center",
     // Ajustez la hauteur souhaitée via le padding
-    paddingBottom: "10px",
-    paddingTop: "20px", // réduit de 70px à 20px
+    paddingBottom: "5px",
+    paddingTop: "15px", // réduit de 70px à 20px
     backgroundColor: "green",
   },
   message: {

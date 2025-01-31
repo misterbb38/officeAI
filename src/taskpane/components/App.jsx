@@ -18,7 +18,7 @@ const App = (props) => {
 
   return (
     <div>
-      <Header logo="assets/logo.svg" title={title} message="PALABRESAK2" className="couleur-text" />
+      <Header logo="assets/logo.svg" title={title} message="Office AI" className="couleur-text" />
 
       {/* Affiche notre pane de traduction */}
       <TranslationPane />
