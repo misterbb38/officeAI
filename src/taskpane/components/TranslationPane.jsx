@@ -614,10 +614,12 @@ export default function TranslationPane() {
         <div className={styles.formGroup}>
           <Label>Langue cible</Label>
           <Select appearance="filled-darker" value={targetLanguage} onChange={(e) => setTargetLanguage(e.target.value)}>
-            <option>Français</option>
-            <option>Anglais</option>
-            <option>Espagnol</option>
             <option>Allemand</option>
+            <option>Anglais</option>
+            <option>Arabe</option>
+            <option>Espagnol</option>
+            <option>Français</option>
+            <option>Portugais</option>
           </Select>
         </div>
 
