@@ -176,12 +176,14 @@ export default function TranslationPane() {
   return (
     <div className={styles.root}>
       <div className={styles.pane}>
+        <a href="help.html" target="_blank">
+          <Button appearance="primary">HELP</Button>
+        </a>
         {/* Header */}
         <div className={styles.header}>
           <Translate24Regular />
           <h2 style={{ margin: 0 }}>Traduction intelligente</h2>
         </div>
-
         {/* Langue cible */}
         <div className={styles.formGroup}>
           <Label>Langue cible</Label>
@@ -194,7 +196,6 @@ export default function TranslationPane() {
             <option>Portugais</option>
           </Select>
         </div>
-
         {/* Instructions (texte ou fichier) */}
         <div className={styles.formGroup}>
           <Label>Instructions spéciales (optionnel)</Label>
@@ -214,7 +215,6 @@ export default function TranslationPane() {
             className={styles.fileInput}
           />
         </div>
-
         {/* Boutons de traduction */}
         <div className={styles.buttons}>
           <Button
@@ -254,7 +254,6 @@ export default function TranslationPane() {
             DeepSeek
           </Button>
         </div>
-
         {/* Zone de texte pour la traduction */}
         <div className={styles.formGroup}>
           <Label>Traduction générée</Label>
@@ -268,7 +267,6 @@ export default function TranslationPane() {
             placeholder="La traduction apparaîtra ici..."
           />
         </div>
-
         {/* Bouton pour insérer dans Word */}
         <Button
           appearance="outline"
@@ -279,7 +277,6 @@ export default function TranslationPane() {
         >
           Insérer dans Word
         </Button>
-
         {/* Status message */}
         {statusMessage && <div className={`${styles.status} ${statusType}`}>{statusMessage}</div>}
       </div>

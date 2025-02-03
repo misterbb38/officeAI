@@ -18,16 +18,19 @@ module.exports = async (env, options) => {
   const config = {
     devtool: "source-map",
     entry: {
+      
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
       vendor: ["react", "react-dom", "core-js", "@fluentui/react-components", "@fluentui/react-icons"],
       taskpane: ["./src/taskpane/index.jsx", "./src/taskpane/taskpane.html"],
       commands: "./src/commands/commands.js",
+
+      help: ["./src/help/help.jsx", "./src/help/help.html"],
     },
     output: {
       clean: true,
     },
     resolve: {
-      extensions: [".js", ".jsx", ".html", "css"],
+      extensions: [".js", ".jsx", ".html", ".css"],
     },
     module: {
       rules: [
@@ -89,6 +92,12 @@ module.exports = async (env, options) => {
         template: "./src/commands/commands.html",
         chunks: ["polyfill", "commands"],
       }),
+      new HtmlWebpackPlugin({
+        filename: "help.html",
+        template: "./src/help/help.html",
+        chunks: ["polyfill", "help"],
+      }),
+
       new webpack.ProvidePlugin({
         Promise: ["es6-promise", "Promise"],
       }),

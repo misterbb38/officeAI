@@ -34,6 +34,7 @@
     "es6-promise": "^4.2.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^7.1.5",
     "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
@@ -80,7 +81,6 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "5.1.0"
   },
-  
   "prettier": "office-addin-prettier-config",
   "browserslist": [
     "last 2 versions",
